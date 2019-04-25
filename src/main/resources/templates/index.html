@@ -1,0 +1,50 @@
+<html xmlns="http://thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-horizontal" action="/app/get" method="GET">
+            <fieldset>
+
+                <!-- Form Name -->
+                <legend>User Login</legend>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="username">Name</label>
+                    <div class="col-md-4">
+                        <input id="name" name="name" type="text" placeholder="Name" class="form-control input-md" required="" />
+
+                    </div>
+                </div>
+
+                <!-- Address input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="address">Address</label>
+                    <div class="col-md-4">
+                        <input id="address" name="address" type="text" placeholder="Address" class="form-control input-md" required="" />
+
+                    </div>
+                </div>
+
+               
+
+                <!-- Button -->
+                <div class="form-actions">
+                    <label class="col-md-4 control-label" for="submit"></label>
+                    <div class="col-md-4">
+                        <button id="submit" name="submit" class="btn btn-primary btn-login">Submit</button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+
+        <script type="text/javascript" th:src="@{/js/jquery-3.1.0.min.js}"></script>
+        <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    </div>
+</body>
+
+</html>
